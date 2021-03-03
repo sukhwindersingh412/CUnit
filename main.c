@@ -46,7 +46,7 @@ int main() {
   CU_add_suite(suite3, "test_mul", test_mul);
   CU_add_suite(suite4, "test_div", test_div);
   
-  //CU_basic_set_mode(CU_BRM_VERBOSE);
+  CU_basic_set_mode(CU_BRM_VERBOSE);
   CU_basic_run_tests();
   CU_cleanup_registry();
   

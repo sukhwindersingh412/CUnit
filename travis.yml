@@ -1,0 +1,40 @@
+Language: c
+
+Compiler:
+  -gcc
+
+before install:
+
+  - sudo apt-get install
+  - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
+  - wget http://downloads.sourceforge.net/project/cunit/CUnit/2.1-2/CUnit-2.1-2-src.tar.bz2
+
+  - tar -xvjpf CUnit-2.1-2-src.tar.bz2
+
+  - cd CUnit-2.1-2
+
+  - ./configure --prefix=$TRAVIS_BUILD_DIR
+
+  - make
+
+  - make install
+
+  - export C_INCLUDE_PATH=$TRAVIS_BUILD_DIR/include:$C_INCLUDE_PATH
+
+  - export LIBRARY_PATH=$TRAVIS_BUILD_DIR/lib:$LIBRARY_PATH
+
+  - export LD_LIBRARY_PATH=$TRAVIS_BUILD_DIR/lib:$LD_LIBRARY_PATH
+
+  #Come back to the repo unwarpped folder
+
+  - cd $TRAVIS_BUILD_DIR/
+install:
+
+  - echo  "Reached Install Section"
+
+script:  
+
+  - echo "Welcome to the Script Section!"
+  - gcc main.c -o results
+  - ./results
+  

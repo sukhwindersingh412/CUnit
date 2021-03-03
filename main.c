@@ -4,31 +4,31 @@
 #include 'functions.h'
 
 void test_add(void){
-  CU_ASSERT(add(0,0)==0);
-  CU_ASSERT(add(0,2)==2);
-  CU_ASSERT(add(2,3)==5);
-  CU_ASSERT(add(-2,5)==3);
+  CU_ASSERT(add(0,0) == 0);
+  CU_ASSERT(add(0,2) == 2);
+  CU_ASSERT(add(2,3) == 5);
+  CU_ASSERT(add(-2,5) == 3);
 }
     
 void test_sub(void){
-  CU_ASSERT(sub(0,0)==0);
-  CU_ASSERT(sub(0,2)==-2);
-  CU_ASSERT(sub(3,2)==1);
-  CU_ASSERT(sub(-2,5)==-8);
+  CU_ASSERT(sub(0,0) == 0);
+  CU_ASSERT(sub(0,2) == -2);
+  CU_ASSERT(sub(3,2) == 1);
+  CU_ASSERT(sub(-2,5) == -8);
 }
 
 void test_mul(void){
-  CU_ASSERT(mul(0,3)==0);
-  CU_ASSERT(mul(1,2)==2);
-  CU_ASSERT(mul(2,3)==6);
-  CU_ASSERT(mul(-2,5)==-10);
+  CU_ASSERT(mul(0,3) == 0);
+  CU_ASSERT(mul(1,2) == 2);
+  CU_ASSERT(mul(2,3) == 6);
+  CU_ASSERT(mul(-2,5) == -10);
 }
 
 void test_div(void){
-  CU_ASSERT(div(0,3==0);
-  CU_ASSERT(div(4,2)==2);
-  CU_ASSERT(div(10,3)=2);
-  CU_ASSERT(div(-20,4)==-5);
+  CU_ASSERT(div(0,3) == 0);
+  CU_ASSERT(div(4,2) == 2);
+  CU_ASSERT(div(10,3) == 2);
+  CU_ASSERT(div(-20,4) == -5);
 }
     
 int main() {

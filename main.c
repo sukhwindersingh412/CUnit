@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <CUnit/CUnit.h>
-#include <CUnit/basic.h>
+#include <CUnit/Basic.h>
 #include "functions.h"
 
 test_add(void){

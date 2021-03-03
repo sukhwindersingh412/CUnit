@@ -5,7 +5,8 @@ Compiler:
 
 before install:
 
-  - sudo apt-get install
+  - sudo apt-get update
+
   - sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev
   - wget http://downloads.sourceforge.net/project/cunit/CUnit/2.1-2/CUnit-2.1-2-src.tar.bz2
 

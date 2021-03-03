@@ -35,6 +35,6 @@ install:
 script:  
 
   - echo "Welcome to the Script Section!"
-  - gcc main.c -o results
+  - gcc main.c -o results -lcunit
   - ./results
   

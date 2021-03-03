@@ -2,7 +2,7 @@
 #include <math.h>
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
-#include "functions.h"
+#include "functions.c"
 
 void test_add(void){
   CU_ASSERT(add(0,0) == 0);

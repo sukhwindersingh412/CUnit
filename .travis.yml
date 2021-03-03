@@ -16,6 +16,6 @@ install:
 script:  
 
   - echo "Welcome to the Script Section!"
-  - gcc main.c -o results -lcunit
+  - gcc functions.c main.c -o results -lcunit
   - ./results
   - size results

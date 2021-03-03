@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include <CUnit/CUnit.h>
 #include <CUnit/Basic.h>
 #include "functions.c"

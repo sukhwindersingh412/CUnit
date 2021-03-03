@@ -14,7 +14,7 @@ before install:
 
   - cd CUnit-2.1-2
 
-  - ./configure --prefix=$TRAVIS_BUILD_DIR
+  - ./configure 
 
   - make
 
